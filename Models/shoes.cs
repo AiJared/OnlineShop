@@ -2,14 +2,13 @@ using System.ComponentModel.DataAnnotations;
 
 namespace OnlineShop.Models;
 
-public class Pizza
+public class Shoes
 {
     public int Id { get; set; }
 
     [Required]
     public string? Name { get; set; }
-    public PizzaSize Size { get; set; }
-    public bool IsGlutenFree { get; set; }
+    public ShoesSize Size { get; set; }
 
     [Range(0.01, 9999.99)]
     public decimal Price { get; set; }
